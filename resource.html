@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+.job{
+ background-color:white;   
+color: lightskyblue;
+border: 1px solid pink;
+margin: 50px;
+
+
+
+
+}
+
+
+
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.o.m</title>
+    <script>
+function add(){
+let a = Number(document.getElementById("first").value);
+let b = Number(document.getElementById("second").value);
+let c = a+b;
+document.getElementById("result").value = c;
+
+}
+
+function Add(){
+var a = (document.getElementById("firs").value);
+var b = (document.getElementById("secon").value);
+var c = a+b;
+ document.getElementById("sum").value = c;
+
+}
+function bmi(){
+
+let p = Number(document.getElementById("weight").value);
+let q = Number(document.getElementById("height").value);
+let r = p/q;
+document.getElementById("answer").value = r;
+
+}
+function mul(){
+var x = (document.getElementById("num1").value);
+var y = (document.getElementById("num2").value);
+var z = x*y;
+document.getElementById("multi").value = z;
+
+}
+
+function submit(){
+    var s = (document.getElementById("submit").value);
+    document.getElementById("Submit").value = s;
+
+
+}
+
+
+
+    </script>
+</head>
+<body><div class="job">
+    <script src="resource.html"></script>
+    <h1>*You can fill up this form for part time job*</h1>
+Enter your first Name:<input id="firs">
+Enter your last Name:<input id="secon">
+<button onclick="Add()">confirm</button>
+<input id="sum">
+</br>
+<h2>Add two Number</h2>
+   Enter your first number:<input id="first">
+   Enter your second number:<input id="second">
+   <button onclick="add()">add</button>  
+   <input id="result">
+</div>
+<h2>CALCULATE YOUR BMI</h2>
+Enter your weight(k.g):<input id="weight">
+Enter your height in (M square).:<input id="height">
+<button onclick="bmi()">calculate</button>
+<input id="answer">
+</br>
+<h2>Multiplication of two Number</h2>
+Enteryour first Number:<input id="num1">
+Enter your second Number:<input id="num2">
+<button onclick="mul()">multiplication</button>
+<input id="multi">
+
+<h2>save data to submit <button></button></h2>
+<a href="tejasbhaskar164@gmail.com"><button onclick="submit()">submit</button></a>
+<input id="submit">
+<h2>
+    Check number even or odd
+</h2>
+<input id="number">
+<button onclick="check()">check</button>
+<input id="output">
+<script>
+function check(){
+var w = Number(document.getElementById("number").value);
+
+ {
+    if(w%2==0){
+
+        document.getElementById("output").value="  even number"+w
+    }
+    else{
+
+        document.getElementById("output").value =" odd number"+w  
+    }
+}
+}
+function calc(){
+let x=parseInt(document.getElementById("first num").value);
+let y=parseInt(document.getElementById("second num").value);
+let opr=document.getElementById("operator").value;
+let z;
+switch(opr){
+    case "+":
+    z=x+y;
+    break;
+    case "-":
+    z=x-y;
+    break;
+    case "*":
+    z=x*y;
+    break;
+    case "/":
+    z=x/y;
+    break;
+default:
+    document.write("you have entered wrong number");
+}
+document.getElementById("ajay").value=z;
+}
+function print(){
+let a=parseInt(document.getElementById("num7").value);
+let b;
+let c;
+for(i=0; i<=10; i++){
+c=a*i;
+b=document.write(a+"*"+i+"="+c+"<br>");
+}
+document.getElementById("uttar").value="table is"+c
+}
+
+
+
+</script>
+<h2>basic calculater</h2>
+Eter your first number:<input type="number"id="first num">
+<select id="operator">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+Enter your second number:<input type="number"id="second num">
+<button onclick="calc()">CALCULATE</button>
+<input type="number"id="ajay">
+<h2>Print  any table</h2>
+Enter a number:<input type="number"id="num7">
+<button onclick="print()">Print table</button>
+<input type="number"id="uttar">
+
+
+
+</body>
+</html>

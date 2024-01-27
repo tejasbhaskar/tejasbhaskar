@@ -1,0 +1,184 @@
+<html>
+<head>
+<style>
+h1{
+background-color:orange;
+text-align:center;
+}
+.calculator{
+border:2px solid red;
+align-items:center;
+padding:240px;
+margin:120px;
+background-color:silver;
+width:400px;
+color:lemon;
+}
+</style>
+<script>
+function calc(){
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var opr=(document.getElementById("operator").value);
+var c;
+switch(opr){
+case "+":
+c=a+b;
+break;
+case "-":
+c=a-b;
+break;
+case "*":
+c=a*b;
+break;
+case "/":
+c=a/b;
+break;
+default:
+document.write("Your Bhaskar");
+}
+document.getElementById("result").value=c;
+}
+
+function table(){
+var j=parseInt(document.getElementById("number").value);
+var k;
+var l;
+for(i=1; i<=10; i++){
+l=j*i;
+k=document.write(j+"+"+i+"="+l,"<br>");
+}
+document.getElementById("output").value="table is"+l
+}
+
+function star(){
+var s=parseInt(document.getElementById("ajay").value);
+var e;
+var d;
+for(i=1; i<=s; i++){
+for(d=1; d<=i; d++){
+e=document.write("*");
+}
+document.write("<br>");
+}
+document.getElementById("vijay").value="star is"+d
+}
+
+function check(){
+var w = Number(document.getElementById("number4").value);
+
+ {
+    if(w%2==0){
+
+        document.getElementById("outputs").value="  even number"+w
+    }
+    else{
+
+        document.getElementById("outputs").value =" odd number"+w  
+    }
+}
+}
+function bmi(){
+
+let p = Number(document.getElementById("weight").value);
+let q = Number(document.getElementById("height").value);
+let r = p/q;
+document.getElementById("answer").value = r;
+}
+function Add(){
+var a = (document.getElementById("firs").value);
+var b = (document.getElementById("secon").value);
+var c = a+b;
+ document.getElementById("sum").value = c;
+
+}
+function result(){
+    var value1=parseFloat(document.getElementById("value1").value);
+    var value2=parseFloat(document.getElementById("value2").value);
+    var value3=parseFloat(document.getElementById("value3").value);
+    var value4=parseFloat(document.getElementById("value4").value);
+    var value5=parseFloat(document.getElementById("value5").value);
+    var value6=parseFloat(document.getElementById("value6").value);
+var total=(value1+value2+value3+value4+value5+value6);
+var per=(total)/6;
+document.getElementById("total").value=total;
+document.getElementById("percentage").value=per;
+var grade;
+if(per>90){
+    garde="A";
+    document.getElementById("grade").value=grade;
+}else if(per>80){
+    grade="B";
+    document.getElementById("grade").value=grade;
+}else if(per>70){
+    grade="C";
+    document.getElementById("grade").value=grade;
+}else if(per>60){
+    grade="D";
+    document.getElementById("grade").value=grade;
+}else{
+    grade="fail";
+    document.getElementById("grade").value=grade;
+
+}
+}
+
+</script>
+
+
+
+</head>
+<title>Bhaskar hub</title>
+<body style="background-color:skyblue;">
+<marquee width="100%"behaviour="alternate"bgcolor="red"> WELCOME BHASKAR</marquee>
+
+<h1>*You can fill up this form for part time job*</h1>
+Enter your first Name:<input id="firs">
+Enter your last Name:<input id="secon">
+<button onclick="Add()">confirm</button>
+<input id="sum">
+
+<h1>Print Table</h1>
+Enter your number:<input type="number"id="number">
+<button onclick="table()">Print Table</button>
+<input type="number"id="output">
+
+<h1>Print Star Pattern</h1>
+Enter your number:<input type="number"id="ajay">
+<button onclick="star()">Print star</button>
+<input type="number"id="vijay">
+
+<h1>Basic Calculater</h1>
+Eneter your first number:<input type="number"id="num1">
+<select id="operator">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+Enter your second number:<input type="number"id="num2">
+<button onclick="calc()">Calculate</button>
+<input type="number"id="result">
+
+<h2> Check number even or odd</h2>
+<input id="number4">
+<button onclick="check()">check</button>
+<input id="outputs">
+<h2>CALCULATE YOUR BMI</h2>
+Enter your weight(k.g):<input id="weight">
+Enter your height in (M square).:<input id="height">
+<button onclick="bmi()">calculate</button>
+<input id="answer">
+<h1>Input your marks and get your result</h1>
+Hindi:<input type="number"id="value1"><br>
+English:<input type="number"id="value2"><br>
+Mathematics:<input type="number"id="value3"><br>
+Science:<input type="number"id="value4"><br>
+Art:<input type="number"id="value5"><br>
+Social Science:<input type="number"id="value6"><br>
+<button onclick="result()">calculate</button><br>
+ObtainMarks:<input type="number"id="total"><br>
+percentage:<input type="number"id="percentage"><br>
+Grade:<input id="grade"><br>
+</body>
+</html>

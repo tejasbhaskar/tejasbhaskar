@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <script>
+function printTable(){
+let a=parseInt(document.getElementById("num1").value);
+let b;
+let c;
+for(i=0; i<=10; i++){
+    c=a*i;
+    b=document.write(a+"+"+i+"="+c,"<br>");
+}
+document.getElementById("result").value="table is"+c
+}
+function star(){
+var s=parseInt(document.getElementById("Number1").value);
+var j;
+var r;
+for(i=1; i<=s; i++){
+   for(j=1; j<=i; j++){
+    r=document.write("*");
+   } 
+   r=document.write("<br>");
+}
+document.getElementById("final").value="Star is"+r
+}
+</script>
+<h1>Print Table</h1>
+    Enter your number:<input type="number"id="num1">
+    <button onclick="printTable()">PrintTable</button>
+    <input type="number"id="result"> 
+    <h1>print star</h1>
+    <input type="number"id="Number1">
+    <button onclick="star()">Print star</button>
+    <input type="number"id="final">
+<script>
+function nude(){
+    var a=parseInt(document.getElementById("ravi").value);
+    var b;
+    var c;
+    for(i=0; i<=10; i++){
+    c=a*i;
+    b=document.write(a+"+"+i+"="+c,"<br>");
+
+    }b
+    document.getElementById("new").value="table is"+c
+}
+function kabir(){
+    var a=parseInt(document.getElementById("ajay").value);
+    var b;
+    var c;
+    for(i=0; i<=a; i++){
+        for(b=0; b<=i; b++){
+            c=document.write("*" )
+        }
+        c=document.write("<br>");
+    }
+    document.getElementById("bahar").value="star"+c
+}
+
+</script>
+<h2>Table</h2>
+    Enter your number:<input type="number"id="ravi">
+    <button onclick="nude()">table</button>
+    <input type="number"id="new">
+    <h2>Star</h2>
+    <input type="number"id="ajay">
+    <button onclick="kabir()">STAR</button>
+    <input type="number"id="bahar">
+</body>
+</html>

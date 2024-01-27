@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function calc(){
+var a = parseInt(document.getElementById("num1").value);
+var b = parseInt(document.getElementById("num2").value);
+var opr = (document.getElementById("operator").value);
+var c;
+switch(opr){
+case "+":
+    c=a+b;
+break;
+case "-":
+    c=a-b;
+break;
+case "*":
+    c=a*b;
+break;
+case "/":
+    c=a/b;
+break;
+default:
+    document.write("bhaskar");
+}
+document.getElementById("result").value=c;
+
+}
+function table(){
+var p=parseInt(document.getElementById("number").value);
+
+
+
+
+
+}
+ </script>
+<h1>Basic Calculator</h1>
+
+  Enter your first number:<input type="number"id="num1">
+  <select id="operator">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">+</option>
+<option value="/">/</option>
+  </select>
+  Enter your first number:<input type="number"id="num2">
+<button onclick="calc()">calculate</button>
+<input type="number"id="result">
+<h1>Print table</h1>
+Choose your number who wants you print table:<input type="number">
+<button onclick="table()">Print table</button>
+<input type="number"id="answer">
+</body>
+</html>

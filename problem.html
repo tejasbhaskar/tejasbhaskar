@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function confirm(){
+var a=parseInt(document.getElementById("num1").value);
+var b=parseInt(document.getElementById("num2").value);
+var c=parseInt(document.getElementById("num3").value);
+var d=parseInt(document.getElementById("num4").value);
+var e=parseInt(document.getElementById("num5").value);
+var total=(a+b+c+d+e);
+var per=(total)/5;
+(document.getElementById("total").value=total);
+ (document.getElementById("per").value=per);
+var grade;
+if(per>90){
+    grade="A";
+   document.getElementById("grade").value=grade; 
+
+}else if(per>80){
+    grade="b";
+   document.getElementById("grade").value=grade; 
+
+}
+else if(per>70){
+    grade="c";
+   document.getElementById("grade").value=grade; 
+
+}else if(per>60){
+    grade="d";
+   document.getElementById("grade").value=grade; 
+
+}else{
+   grade="fail";
+   document.getElementById("grade").value=grade; 
+}
+        }
+    </script>
+    <h1>Calculate your result and grade.</h1>
+    Hindi:<input type="number"id="num1"><br>
+    English:<input type="number"id="num2"><br>
+    Math:<input type="number"id="num3"><br>
+    Science:<input type="number"id="num4"><br>
+    Art:<input type="number"id="num5"><br>
+    <button onclick="confirm()">CALCULATE</button>
+    Total:<input type="number"id="total">
+    Percentage:<input type="number"id="per">
+    grade:<input id="grade">
+    
+    
+</body>
+</html>

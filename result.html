@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function calc(){
+var a=parseFloat(document.getElementById("num1").value);
+var b=parseFloat(document.getElementById("num2").value);
+var c=parseFloat(document.getElementById("num3").value);
+var d=parseFloat(document.getElementById("num4").value);
+var e=parseFloat(document.getElementById("num5").value);
+var f=parseFloat(document.getElementById("num6").value);
+
+var total=(a+b+c+d+e+f);
+var per=(total/6);
+(document.getElementById("total").value=total);
+(document.getElementById("per").value=per);
+
+var grade;
+if(per>=90){
+    grade="A";
+}
+else if(per>=80){
+    grade="B";
+}
+else if(per>=70){
+    grade="C";
+}
+else{
+    grade="FAIL";
+}
+
+(document.getElementById("grade").value=grade);
+
+}
+
+
+    </script>
+</head>
+<body>
+  Hindi:<input type="number"id="num1"><br>
+  English:<input type="number"id="num2"> <br> 
+  Math:<input type="number"id="num3"> <br> 
+  Art:<input type="number"id="num4"> <br> 
+  Science:<input type="number"id="num5">  <br>
+   Social Science:<input type="number"id="num6">  <br>
+
+<button onclick="calc()">calculate</button>
+total<input type="number"id="total"><br>
+percentage<input type="number"id="per"><br>
+grade<input type="number"id="grade"><br>
+</body>
+</html>

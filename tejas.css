@@ -1,0 +1,152 @@
+h1{
+    text-align: center;
+    background-color: greenyellow;
+    border: 1px solid black;
+    }
+    .navbar{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    }
+    .navbar li{
+    display: flex;
+    justify-content: center;
+    float: left;
+    padding: 20px;
+    background-color: rgb(101, 228, 228);
+    border: 2px gold;
+    border-radius: 30px;
+    box-shadow: silver;
+    margin: 10px;
+    
+    }
+    .navbar :hover{
+        background-color: yellow;
+        
+    }
+    .search{
+    background-color: orange;
+    padding: 8px 16px;
+    float: right;
+    }
+    .flex{
+    display: flex;
+    background-color: lightsteelblue;
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid black;
+    
+    }
+    .a{
+    border: 3px;
+        background-color: darkcyan;
+        display: block;
+        
+    }
+    .container{
+    border: 2px solid violet;
+    box-shadow: rosybrown;
+    padding: 10px;
+    
+    }
+    .Sicon{
+        text-align: center;
+    float: right;
+    background-color:lightskyblue;
+    text-size-adjust:1px;
+    border-radius: 45px;
+    font-size: 12px;
+    padding-right: 50px;
+    }
+    .Sicon:hover{
+        background-color: seagreen;
+    }
+    .a{
+        background-color: hotpink;
+    }
+    .b{
+        background-color: rgb(112, 174, 191);
+    }
+    .c{
+        background-color: rgb(168, 120, 168);
+    }
+    .jay{
+ background-color: aqua;
+ border: 2px solid red;
+ float: right;
+    }
+.veeru{
+        background-color: aqua;
+        border: 2px solid red;
+        float: left; 
+    }
+    .boby{
+        cursor: pointer;
+        pointer-events: stroke;
+        border: 2px solid coral;
+        float: right;
+        color: mediumturquoise;
+        margin-bottom: 12px;
+    }
+    .boby:hover{
+        background-color: lightseagreen;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }footer{
+        background-color: black;
+    }
+    .footerContainer{
+        width: 100%;
+        padding: 70px 38px 20px;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+    }
+    .icon a{
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 50px;
+    }
+    .icon a i{
+        font-size: 2em;
+        color: black;
+        opacity: 0.9;
+    
+    }
+    .icon a:hover{
+        background-color: black;
+        transition: o.5s;
+    }
+    .icon a:hover{
+        color: white;
+        transition: 0.5s;
+    }.footerNav{
+        margin: 30px;
+    }
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footerNav ul li a{
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size:1.3em ;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    .footerNav ul li a:hover{
+    opacity: 1;
+    } 
+    .footerBottom{
+        background-color: black;
+        padding: 2px;
+        text-align: center;
+        color: white;
+    }
